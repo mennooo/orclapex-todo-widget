@@ -1,10 +1,11 @@
-.todo-list {
-  padding: 2rem;
+.todo-list .todo-input {
+  padding: 0;
+  margin-bottom: 2rem;
 }
 
 .todo-list .todo-input input {
   display: block;
-  margin: 0;
+  margin: 0 !important;
   width: 100%;
   font-family: sans-serif;
   font-size: 18px;
@@ -19,10 +20,12 @@
 .todo-list .todo-list-items {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .todo-list .todo-item {
-  border: 1px solid #b4b4b4;
+  border-width: 1px;
+  border-style: solid;
   border-radius: 3px;
   margin-top: .5rem;
   padding: .5rem .2rem;
@@ -43,10 +46,5 @@
 
 .todo-list .ui-sortable .ui-sort {
   cursor: move;
-  background-color: #f4f4f4;
-  padding: .1rem;
-  margin: 0 .3rem;
-  border: 1px solid #b4b4b4;
-  border-radius: 3px;
 } 
 
