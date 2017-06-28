@@ -11,7 +11,6 @@
   const cClassDelItem = 'todo-item-delete'
   const cClassNoDataFound = 'no-data-found'
   const cClassList = 'todo-list-items'
-  const cClassWidget = 'todo-list'
   const cClassInput = 'todo-input'
   const cClassSort = 'ui-sort'
   const cClassItemActions = 'todo-actions'
@@ -143,7 +142,7 @@
       this._renderNoDataFound()
 
       // Create widget container
-      this.widget$ = this.element.addClass('todo-list t-Form--large')
+      this.widget$ = this.element.addClass('t-Form--large')
 
       // Add all components in container
       this.widget$.append(this._todoInput$, this._todoList$, this._noDataFound$)
@@ -295,7 +294,7 @@
       promise = apex.server.plugin(data)
       // Add debugging for all AJAX callbacks
       promise.then(function (pData) {
-        //apex.debug(', Result data:', pData)
+        apex.debug('Action:', options.action, ', Result data:', pData)
         // When resolved, apply context of widget and return To-Do list
         deferred.resolveWith(self, [pData.regions[0].todoList])
       })

@@ -6,7 +6,10 @@
   <meta charset="utf-8">
   <title>Oracle APEX - To-Do widget</title>
 
-  <link rel="stylesheet" href="../css/widget.todo-list.css" type="text/css" />
+  <link rel="stylesheet" href="../css/Core.min.css" type="text/css" />
+  <link rel="stylesheet" href="../css/font-apex.min.css" type="text/css" />
+  <link rel="stylesheet" href="../css/Vita.min.css" type="text/css" />
+  <!--<link rel="stylesheet" href="../css/widget.todo-list.css" type="text/css" />-->
 </head>
 
 <body>
@@ -24,7 +27,8 @@
       jQuery('#todo-list').todoList({
         sortable: true,
         inputPlaceholder: 'Add a new To-Do',
-        deleteIcon: 'delete'
+        deleteIcon: 'fa-trash-o',
+        sortIcon: 'fa-arrows-v'
       })
     })
   </script>
